@@ -80,9 +80,9 @@ let validate = async () => {
         passwordError.value = ""
         passRef.value!.style.borderColor = "inherit"
 
-        let userDetails = async () => await axios.get(`https://wisdom-circle-nest-production.up.railway.app/${email.value}`).then((res)=>res.data)
-        password.value === (await userDetails()).password ? router.push("welcome"): console.error((await userDetails()).email)
-    }    
+        let userDetails = async () => await axios.get(`https://wisdom-circle-nest-production.up.railway.app/${email.value}`).then((res) => res.data)
+        password.value === (await userDetails()).password ? router.push("welcome") : console.error((await userDetails()).email)
+    }
 }
 
 
@@ -260,12 +260,11 @@ input {
     letter-spacing: 0.05rem;
 }
 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-    .main{
-        height: 96vh;
-        padding: 2vh;
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .main {
+        position: absolute;
+        width: 350px;
+        height: 80vh;
     }
 }
 </style>
