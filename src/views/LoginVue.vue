@@ -30,8 +30,8 @@
                     </div>
                 </div>
                 <div class="userDeets">
-                    <h4>Current Email : {{ userDetails.email }}</h4>
-                    <h4>Current Password : {{ userDetails.password }}</h4>
+                    <h4>Current Email : {{ userDetails? userDetails.email:'' }}</h4>
+                    <h4>Current Password : {{ userDetails? userDetails.password:'' }}</h4>
                 </div>
 
             </div>
@@ -90,11 +90,13 @@ let validate = async () => {
         passRef.value!.style.borderColor = "red"
     }
     else if (password.value != userDetails.value.password) {
-        'Password is incorrect. '
+        passwordError.value = 'Password is incorrect. '
     }
     else {
         passwordError.value = ""
         passRef.value!.style.borderColor = "inherit"
+
+        console.log(userDetails.value.password, password.value)
 
         password.value === userDetails.value.password ? router.push("welcome") : console.error(userDetails.value.email)
     }
