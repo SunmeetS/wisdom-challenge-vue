@@ -224,7 +224,6 @@ a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 1rem;
 }
 
 .mainScreen>* {
@@ -259,5 +258,14 @@ input {
 
 * {
     letter-spacing: 0.05rem;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .main{
+        height: 96vh;
+        padding: 2vh;
+    }
 }
 </style>
