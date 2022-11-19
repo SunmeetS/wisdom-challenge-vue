@@ -224,6 +224,7 @@ a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 1rem;
 }
 
 .mainScreen>* {
