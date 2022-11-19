@@ -96,7 +96,7 @@ let validate = async () => {
         passwordError.value = ""
         passRef.value!.style.borderColor = "inherit"
 
-        password.value === (await userDetails()).password ? router.push("welcome") : console.error((await userDetails()).email)
+        password.value === userDetails.value.password ? router.push("welcome") : console.error(userDetails.value.email)
     }
 }
 
