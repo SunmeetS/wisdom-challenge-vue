@@ -259,12 +259,4 @@ input {
 * {
     letter-spacing: 0.05rem;
 }
-
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-    .mainScreen{
-        height: 70vh;
-    }
-}
 </style>
