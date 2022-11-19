@@ -159,7 +159,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 0rem;
     left: 0rem;
     height: 100vh;
