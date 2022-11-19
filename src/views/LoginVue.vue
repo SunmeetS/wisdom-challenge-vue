@@ -29,6 +29,11 @@
                         </div>
                     </div>
                 </div>
+                <div class="userDeets">
+                    <h4>Current Email : {{ userDetails.email }}</h4>
+                    <h4>Current Password : {{ userDetails.password }}</h4>
+                </div>
+
             </div>
             <div class="footer">
                 <ButtonVue @click="validate"> Sign in </ButtonVue>
@@ -48,6 +53,14 @@ import axios from 'axios';
 let emailRef = ref<HTMLInputElement | null>(null);
 let passRef = ref<HTMLInputElement | null>(null);
 let showPassword = ref(true);
+
+let userDetailsFunc = async () => await axios.get(`https://wisdom-circle-nest-production.up.railway.app/user@mail.com`).then((res) => res.data)
+
+let userDetails = ref()
+
+userDetailsFunc().then((res) => {
+    userDetails.value = res
+})
 
 onMounted(() => {
     emailRef.value!.focus()
@@ -80,7 +93,6 @@ let validate = async () => {
         passwordError.value = ""
         passRef.value!.style.borderColor = "inherit"
 
-        let userDetails = async () => await axios.get(`https://wisdom-circle-nest-production.up.railway.app/${email.value}`).then((res) => res.data)
         password.value === (await userDetails()).password ? router.push("welcome") : console.error((await userDetails()).email)
     }
 }
@@ -119,6 +131,10 @@ a {
 .textSignIn h2 {
     font-family: "Inter", sans-serif;
     font-size: 21px;
+}
+
+.userDeets>*{
+    margin: 0.5rem
 }
 
 .textSignIn p {
