@@ -89,6 +89,9 @@ let validate = async () => {
                                 Max 30 characters.`
         passRef.value!.style.borderColor = "red"
     }
+    else if (password.value != userDetails.value.password) {
+        'Password is incorrect. '
+    }
     else {
         passwordError.value = ""
         passRef.value!.style.borderColor = "inherit"
@@ -274,5 +277,11 @@ input {
 
 * {
     letter-spacing: 0.05rem;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .main {
+        position: absolute;
+    }
 }
 </style>
