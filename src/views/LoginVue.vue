@@ -261,8 +261,11 @@ input {
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .main {
+    .mainScreen{
         position: absolute;
+        top: 5%;
+        left: 1.5%;
+        overflow: hidden !important;
     }
 }
 </style>
