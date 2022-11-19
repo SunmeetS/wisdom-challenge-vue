@@ -76,8 +76,8 @@ let ifSuccess = async () => {
         // or with options
 
         axios({
-            method: 'post',
-            url: 'http://wisdom-circle-nest-production.up.railway.app/updatePassword',
+            method: 'patch',
+            url: 'https://wisdom-circle-nest-production.up.railway.app/updatePassword',
             data: {
                 email: 'user@mail.com',
                 password: password1.value
