@@ -107,6 +107,7 @@ let validate = async () => {
 </script>
 
 <style>
+
 .signUp {
     display: flex;
     font-size: 0.8rem;
@@ -220,8 +221,6 @@ a:hover {
     color: #121317;
 }
 
-
-
 .footer {
     width: 100vw;
     display: flex;
@@ -281,7 +280,5 @@ input {
     letter-spacing: 0.05rem;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
-}
 </style>
