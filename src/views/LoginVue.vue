@@ -263,8 +263,6 @@ input {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .main {
         position: absolute;
-        width: 350px;
-        height: 80vh;
     }
 }
 </style>
