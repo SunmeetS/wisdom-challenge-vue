@@ -58,11 +58,11 @@ let emailRef = ref<HTMLInputElement | null>(null);
 let passRef = ref<HTMLInputElement | null>(null);
 let showPassword = ref(true);
 
-let userDetailsFunc = async () => await axios.get(`https://wisdom-circle-nest-production.up.railway.app/user@mail.com`).then((res) => res.data)
+let userDetailsFunc: any = async () => await axios.get(`https://wisdom-circle-nest-production.up.railway.app/user@mail.com`).then((res) => res.data)
 
 let userDetails = ref()
 
-userDetailsFunc().then((res) => {
+userDetailsFunc().then((res: any) => {
     userDetails.value = res
 })
 

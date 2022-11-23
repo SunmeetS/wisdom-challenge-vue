@@ -36,6 +36,7 @@
 <script setup lang="ts">
 import TextComp from '@/components/TextComp.vue';
 import router from '@/router';
+import axios from 'axios';
 import { ref } from 'vue';
 import { onMounted } from 'vue';
 import Button from '../components/Button.vue';
@@ -48,7 +49,7 @@ let userDetails = ref()
 
 let userDetailsFunc = async () => await axios.get(`https://wisdom-circle-nest-production.up.railway.app/user@mail.com`).then((res) => res.data)
 
-userDetailsFunc().then((res) => {
+userDetailsFunc().then((res: any) => {
     userDetails.value = res
 })
 
