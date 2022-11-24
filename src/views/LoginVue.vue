@@ -115,17 +115,32 @@ let validate = async () => {
     display: none;
 }
 
-.mainLogoMobile{
+input {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.mainLogoMobile {
     display: none !important;
 }
 
+.errMsg {
+    color: red;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
 
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .pc {
         display: none;
     }
-    .mainLogoMobile{
+
+    .mainLogoMobile {
         display: flex !important;
     }
 
@@ -170,13 +185,6 @@ let validate = async () => {
 
     .textSignIn a {
         font-family: 'Poppins';
-    }
-
-    .errMsg {
-        width: 100%;
-        text-align: start;
-        font-size: 0.7rem;
-        color: red
     }
 
     .main {
@@ -288,7 +296,7 @@ let validate = async () => {
         margin-top: 0.7rem;
     }
 
-    .passDiv input {    
+    .passDiv input {
         border: none;
         margin-top: 0rem;
     }
