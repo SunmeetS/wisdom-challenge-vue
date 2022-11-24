@@ -15,9 +15,9 @@
                             roles that can be done online and in-person.</p>
                     </div>
                     <div class="partition">
-                        <img src="../assets/Rectangle 354.png" alt="">
-                        <img src="../assets/Rectangle 355.png" alt="">
-                        <img src="../assets/Rectangle 355.png" alt="">
+                        <img src="../assets/Rectangle-354.png" alt="">
+                        <img src="../assets/Rectangle-355.png" alt="">
+                        <img src="../assets/Rectangle-355.png" alt="">
                     </div>
                 </div>
                 <div class="contactDetails">
