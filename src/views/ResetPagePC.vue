@@ -73,7 +73,7 @@ let ifSuccess = async () => {
 
     axios({
       method: 'patch',
-      url: import.meta.env.BASE_URL+'/'+'updatePassword',
+      url: import.meta.env.VITE_MAIN_URL+'/'+'updatePassword',
       data: {
         email: 'user@mail.com',
         password: password1.value

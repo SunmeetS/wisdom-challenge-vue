@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <div class="app" style="overflow: hidden !important">
+  <div class="app">
     <RouterView />
   </div>
 </template>
@@ -12,6 +12,16 @@ import { RouterLink, RouterView } from 'vue-router'
 header {
   line-height: 1.5;
   max-height: 100vh;
+}
+
+.app {
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+}
+
+* {
+  height: fit-content;
 }
 
 #app{
