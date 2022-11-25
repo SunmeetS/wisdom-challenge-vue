@@ -52,6 +52,13 @@ nav a:first-of-type {
   border: 0;
 }
 
+.app {
+  position: fixed;
+  top: 0vh;
+  left: 0rem;
+}
+
+
 @media (min-width: 1024px) {
   header {
     display: flex;
