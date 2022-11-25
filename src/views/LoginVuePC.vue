@@ -54,7 +54,7 @@ let passRef = ref<HTMLInputElement | null>(null);
 let showPassword = ref(true);
 let userDetails = ref()
 
-let userDetailsFunc = async () => await axios.get(`https://wisdom-circle-nest-production.up.railway.app/user@mail.com`).then((res) => res.data)
+let userDetailsFunc = async () => await axios.get(import.meta.env.BASE_URL+'/'+'user@mail.com').then((res) => res.data)
 
 userDetailsFunc().then((res: any) => {
     userDetails.value = res
