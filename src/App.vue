@@ -3,7 +3,9 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <RouterView />
+  <div class="app" style="overflow: hidden !important">
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>
