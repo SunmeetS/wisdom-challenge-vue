@@ -16,7 +16,7 @@ header {
 
 .app {
   position: fixed;
-  top: 0rem;
+  top: -5rem;
   left: 0rem;
 }
 
