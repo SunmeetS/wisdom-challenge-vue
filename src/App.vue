@@ -3,9 +3,9 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <div class="app">
+  
     <RouterView />
-  </div>
+  
 </template>
 
 <style scoped>
@@ -50,12 +50,6 @@ nav a {
 
 nav a:first-of-type {
   border: 0;
-}
-
-.app {
-  position: fixed;
-  top: 0vh;
-  left: 0rem;
 }
 
 
