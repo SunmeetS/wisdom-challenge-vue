@@ -79,8 +79,8 @@ userDetailsFunc().then((res: any) => {
 onMounted(() => {
     emailRef.value!.focus()
     passRef.value!.focus()
-    randomStandupComedy.value!.focus()
-    console.log(randomStandupComedy.value)
+    // randomStandupComedy.value!.focus()
+    // console.log(randomStandupComedy.value)
 })
 
 let email = ref(""), password = ref(""),
@@ -109,7 +109,7 @@ let validate = async () => {
         console.log(userDetails.value.password, password.value)
 
         password.value === userDetails.value.password ? router.push("welcome") : console.error(userDetails.value.email)
-        randomStandupComedy.value.click()
+        // randomStandupComedy.value.click()
         // Add Authentication to Random Standup Comedy App using this. 
     }
 }
